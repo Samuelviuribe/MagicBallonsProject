@@ -179,7 +179,12 @@ document.querySelectorAll('.btn-edit-cart').forEach(btn => {
          const adicional2 = this.getAttribute('data-adicionales-2');
          const adicional3 = this.getAttribute('data-adicionales-3');
          const adicional4 = this.getAttribute('data-adicionales-4');
-         
+         const frutas1 = this.getAttribute('data-frutas-1');
+         const frutas2 = this.getAttribute('data-frutas-2');
+         const frutas3 = this.getAttribute('data-frutas-3');
+         const frutas4 = this.getAttribute('data-frutas-4');
+         const frutas5 = this.getAttribute('data-frutas-5');
+          
          // Crea un formulario dinámico
          const form = document.createElement('form');
          form.method = 'POST';
@@ -187,7 +192,7 @@ document.querySelectorAll('.btn-edit-cart').forEach(btn => {
          form.target = '_blank'; // Para abrir en una nueva pestaña
  
          // Agrega los datos como campos ocultos
-         const data = { producto, precio, cantidadDulces, imagen, dedicatoria, objeto1, objeto2, objeto3, adicional1, adicional2, adicional3, adicional4 };
+         const data = { producto, precio, cantidadDulces, imagen, dedicatoria, objeto1, objeto2, objeto3, adicional1, adicional2, adicional3, adicional4, frutas1, frutas2, frutas3, frutas4, frutas5 };
          for (const key in data) {
              const input = document.createElement('input');
              input.type = 'hidden';
