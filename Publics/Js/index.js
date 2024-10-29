@@ -170,6 +170,8 @@ document.querySelectorAll('.btn-edit-cart').forEach(btn => {
          const producto = this.getAttribute('data-producto');
          const precio = this.getAttribute('data-precio');
          const cantidadDulces = this.getAttribute('data-cantidad-dulces');
+         const globos = this.getAttribute('data-cantidad-globos');
+         const cantidadBebidas = this.getAttribute('data-cantidad-botellas');
          const imagen = this.getAttribute('data-imagen');
          const dedicatoria = this.getAttribute('data-nombre-dedicatorio');
          const objeto1 = this.getAttribute('data-objetos-1');
@@ -192,7 +194,7 @@ document.querySelectorAll('.btn-edit-cart').forEach(btn => {
          form.target = '_blank'; // Para abrir en una nueva pestaña
  
          // Agrega los datos como campos ocultos
-         const data = { producto, precio, cantidadDulces, imagen, dedicatoria, objeto1, objeto2, objeto3, adicional1, adicional2, adicional3, adicional4, frutas1, frutas2, frutas3, frutas4, frutas5 };
+         const data = { producto, precio, cantidadDulces, globos,cantidadBebidas ,imagen, dedicatoria, objeto1, objeto2, objeto3, adicional1, adicional2, adicional3, adicional4, frutas1, frutas2, frutas3, frutas4, frutas5 };
          for (const key in data) {
              const input = document.createElement('input');
              input.type = 'hidden';

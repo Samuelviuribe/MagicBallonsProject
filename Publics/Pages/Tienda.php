@@ -95,7 +95,9 @@
     </div>
     <!-- header -->
 
-    <h1> Anchetas</h1>
+    <div class="catalogo-title">
+        <h1> Anchetas</h1>
+    </div>
 
     <div class="cointainer-items">
         <div class="item">
@@ -113,7 +115,7 @@
                     data-cantidad-dulces="5"
                     data-cantidad-globos="3"
                     data-nombre-dedicatorio="Feliz Cumpleaños"
-                    data-cantidad-botellas="2"
+                    data-cantidad-botellas="1"
                     data-objetos-1="Juguete"
                     data-objetos-2="Tarjeta"
                     data-objetos-3="Foto"
@@ -124,7 +126,7 @@
                     data-frutas-4="uvas"
                     data-frutas-5="melocotones"
                     data-tamaño="Mediano"
-                    
+
                     id="personalizar-btn-1">
                     <!-- Icono de SVG -->
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon-customise">
@@ -165,9 +167,9 @@
                     data-frutas-2="manzanas"
                     data-frutas-3="peras"
                     data-frutas-4="uvas"
-                    data-frutas-5="melocotones" 
+                    data-frutas-5="melocotones"
                     data-tamaño="Mediano"
-                      
+
                     id="personalizar-btn-2">
                     <!-- Icono de SVG -->
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon-customise">
@@ -205,7 +207,7 @@
                     data-frutas-4="uvas"
                     data-frutas-5="melocotones"
                     data-tamaño="Mediano"
-                    
+
                     id="personalizar-btn-1">
                     <!-- Icono de SVG -->
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon-customise">
@@ -230,7 +232,7 @@
                     data-producto="Ancheta de Dulces"
                     data-precio="27000"
                     data-cantidad-dulces="9"
-                    data-cantidad-globos="0"
+                    data-cantidad-globos="1"
                     data-cantidad-botellas="0"
                     data-objetos-1=""
                     data-objetos-2="Tarjeta"
@@ -242,7 +244,7 @@
                     data-frutas-4="Uvas"
                     data-frutas-5="Melocotones"
                     data-tamaño="Mediano"
-                    
+
                     id="personalizar-btn-1">
                     <!-- Icono de SVG -->
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon-customise">
@@ -277,12 +279,15 @@
         </div>
     </div>
 
-    <h1>Decoraciones</h1>
+
+    <div class="catalogo-title">
+        <h1>Decoraciones</h1>
+    </div>
 
 
     <div class="decoraciones-container">
 
-    <div class="item">
+        <div class="item">
             <figure>
                 <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
             </figure>

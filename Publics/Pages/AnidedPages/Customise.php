@@ -3,6 +3,7 @@ $producto = isset($_POST['producto']) ? $_POST['producto'] : 'Producto no especi
 $imagen = isset($_POST['imagen']) ? $_POST['imagen'] : 'No se permite cambiar los paramtetros de configuracion para este producto';
 $precio = isset($_POST['precio']) ? $_POST['precio'] : 0;
 $cantidadDulces = isset($_POST['cantidadDulces']) ? $_POST['cantidadDulces'] : null;
+$cantidadBebidas = isset($_POST['cantidadBebidas']) ? $_POST['cantidadBebidas'] : null;
 $globos = isset($_POST['globos']) ? $_POST['globos'] : 0;
 $dedicatoria = isset($_POST['dedicatoria']) ? $_POST['dedicatoria'] : null;
 $objeto1 = isset($_POST['objeto1']) ? $_POST['objeto1'] : null;
@@ -55,18 +56,18 @@ $frutas5 = isset($_POST['frutas5']) ? $_POST['frutas5'] : null;
                 </div>
 
                 <div class="dulces item-custom">
-                    <label for="cantidad-dulces">Cantidad Dulces:</label>
-                    <input class="input-quantity" type="number" id="cantidad-dulces" value="<?php echo htmlspecialchars($cantidadDulces); ?>">
+                    <label for="cantidad-dulces">Cantidad de Golosinas:</label>
+                    <input class="input-quantity" type="number" id="cantidad-dulces" min="0" value="<?php echo htmlspecialchars($cantidadDulces); ?>">
                 </div>
 
                 <div class="globos item-custom">
                     <label for="globos">Cantidad De Globos:</label>
-                    <input class="input-quantity" type="number" id="cantidad-de-globos" value="<?php echo htmlspecialchars($globos); ?>">
+                    <input class="input-quantity" type="number" id="cantidad-de-globos" min="0" value="<?php echo htmlspecialchars($globos); ?>">
                 </div>
 
                 <div class="botellas item-custom">
                     <label for="dedicatoria">Cantidad de Bebidas:</label>
-                    <input class="input-quantity" type="number" id="cantidad-de-globos" value="<?php echo htmlspecialchars($dedicatoria); ?>">
+                    <input class="input-quantity" type="number" id="cantidad-de-globos" min="0" value="<?php echo htmlspecialchars($cantidadBebidas); ?>">
                 </div>
 
 
@@ -122,27 +123,23 @@ $frutas5 = isset($_POST['frutas5']) ? $_POST['frutas5'] : null;
 
                 <?php if ($frutas1 || $frutas2 || $frutas3 || $frutas4 || $frutas5): ?>
                     <div class="frutas item-custom">
-                        <label for="frutas">Selecciona un objeto:</label>
+                        <label for="frutas">Selecciona una fruta:</label>
                         <select id="frutas" name="frutas">
-                            <option value=""> Escoja una fruta de preferencia </option>
+                            <option value="0"> Escoja una fruta de preferencia </option>
                             <?php if ($frutas1): ?>
-                                <option><?php echo htmlspecialchars($frutas1); ?></option>
+                                <option value="2000"><?php echo htmlspecialchars($frutas1); ?></option>
                             <?php endif; ?>
-
                             <?php if ($frutas2): ?>
-                                <option><?php echo htmlspecialchars($frutas2); ?></option>
+                                <option value="3000"><?php echo htmlspecialchars($frutas2); ?></option>
                             <?php endif; ?>
-
                             <?php if ($frutas3): ?>
-                                <option><?php echo htmlspecialchars($frutas3); ?></option>
+                                <option value="2500"><?php echo htmlspecialchars($frutas3); ?></option>
                             <?php endif; ?>
-
                             <?php if ($frutas4): ?>
-                                <option><?php echo htmlspecialchars($frutas4); ?></option>
+                                <option value="1500"><?php echo htmlspecialchars($frutas4); ?></option>
                             <?php endif; ?>
-
                             <?php if ($frutas5): ?>
-                                <option><?php echo htmlspecialchars($frutas5); ?></option>
+                                <option value="1000"><?php echo htmlspecialchars($frutas5); ?></option>
                             <?php endif; ?>
                         </select>
                     </div>
@@ -181,48 +178,79 @@ $frutas5 = isset($_POST['frutas5']) ? $_POST['frutas5'] : null;
 
             </div>
 
-            <div class="precio-total item-custom">
+            <div class="precio-total">
                 <span>
                     <label for="precio-total">Precio Total (personalizado):</label>
-                    <span id="precio-total">$<?php echo htmlspecialchars($precio + ($globos * 1500)); ?></span>
+                    <span id="precio-total">$<?php echo htmlspecialchars($precio + ($globos * 500)); ?></span>
                 </span>
                 <br>
                 <span>
-                    <label for="precio-globos">Costo de Globos adicionales:</label>
-                    <span id="precio-globos">$<?php echo htmlspecialchars($globos * 1500); ?></span>
+                    <label for="precio-globos">Costo por Globos :</label>
+                    <span id="precio-globos">$<?php echo htmlspecialchars($globos * 500); ?></span>
                 </span>
+                <br>
+                <span>
+                    <label for="precio-dulces">Costo por Dulces :</label>
+                    <span id="precio-dulces">$<?php echo htmlspecialchars($cantidadDulces * 1000); ?></span>
+                </span>
+                <br>
+                <span>
+                    <label for="precio-frutas">Costo por Fruta :</label>
+                    <span id="precio-frutas">$0</span>
+                </span>
+                <br>
             </div>
 
-        </div>
-        <button id="btn-comprar">Comprar</button>
-        <button id="btn-comprar">Share</button>
-        <button id="btn-comprar">feivu</button>
-        <button id="btn-comprar">whasa</button>
+
     </main>
 
+    <button id="btn-comprar">Comprar</button>
+    <button id="btn-compartir">Share</button>
+    <button id="btn-feivu">feivu</button>
+    <button id="btn-whatsapp">whasa</button>
 
     <script>
         // Variables base
         let precioBase = <?php echo $precio; ?>;
-        const precioGlobo = 600;
+        const precioGlobo = 500;
+        const precioDulce = 1000;
 
         // Elementos HTML
         const cantidadGlobos = document.getElementById("cantidad-de-globos");
-        const precioTotalElement = document.getElementById("precio-total");
+        const cantidadDulces = document.getElementById("cantidad-dulces");
+
         const precioGlobosElement = document.getElementById("precio-globos");
+        const precioDulcesElement = document.getElementById("precio-dulces");
+        const precioTotalElement = document.getElementById("precio-total");
+        const frutasElement = document.getElementById("frutas"); // Asegúrate de que este ID coincida con tu HTML
+        const precioFrutasElement = document.getElementById("precio-frutas"); // Asegúrate de tener este elemento en tu HTML
 
         // Función para actualizar el precio total (Previsualización)
         function actualizarPrecioTotal() {
             const cantidadGlobosValue = parseInt(cantidadGlobos.value) || 0;
+            const cantidadDulcesValue = parseInt(cantidadDulces.value) || 0;
+            const costoFrutas = parseInt(frutasElement.value) || 0;
+
+            // Precios individuales
             const costoGlobos = cantidadGlobosValue * precioGlobo;
-            const precioTotal = precioBase + costoGlobos;
+            const costoDulces = cantidadDulcesValue * precioDulce;
+
+            // Precio total 
+            const precioTotal = precioBase + costoGlobos + costoDulces + costoFrutas;
+
+            // Mostrarlos
             precioTotalElement.textContent = "$" + precioTotal;
             precioGlobosElement.textContent = "$" + costoGlobos;
+            precioDulcesElement.textContent = "$" + costoDulces;
+            precioFrutasElement.textContent = "$" + costoFrutas;
         }
 
-        // Event Listener para cambios en la cantidad de globos
+        // Event Listeners para cambios en la cantidad del precio individual
         cantidadGlobos.addEventListener("input", actualizarPrecioTotal);
+        cantidadDulces.addEventListener("input", actualizarPrecioTotal);
+        frutasElement.addEventListener("change", actualizarPrecioTotal);
     </script>
+
 
 
 </body>

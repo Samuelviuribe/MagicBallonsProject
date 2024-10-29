@@ -215,6 +215,12 @@
      max-width: 100%;
  }
 
+ .catalogo-title{
+    display: flex;
+    font-weight: 500;
+    background-color: #f7f7f7;
+}
+
 
 
  /* Main */
@@ -223,13 +229,12 @@
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 20px;
-
+    padding: 5%;
  }
 
  .item {
      border-radius: 10px;
      width: 90%;
-     margin-left: 8%;
  }
 
  .item:hover {
@@ -285,6 +290,7 @@
  .btn-edit-cart{
     width: 30px;
     height: 30px;
+    overflow: hidden;
  }
  
     
@@ -644,3 +650,7 @@ transform: scale(1.1);
     appearance: none;
 } */
 
+.precio-total{
+    
+
+}
