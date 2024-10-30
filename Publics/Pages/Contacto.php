@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+  
     <!-- Nav Bar -->
 
     <div class="hero">
@@ -72,24 +72,24 @@
     <div class="mb-contactos">
 
         <h1 class="h1-map">¡Contactanos!</h1>
-        <p> En Magic Balloons, nos apasiona transformar tus sueños en realidades memorables. <br> 
-        Ya sea que estés planeando una fiesta de cumpleaños, una boda, una celebración corporativa o cualquier otro evento especial,<br>
-        nuestro equipo está listo para ofrecerte las mejores decoraciones y servicios personalizados.<br><br>
-        Si tienes alguna pregunta sobre nuestros productos, servicios o tarifas, no dudes en ponerte en contacto con nosotros. <br>
-        Nuestro objetivo es ayudarte a crear el ambiente perfecto para tu evento, asegurando que cada detalle esté a la altura de tus expectativas.<br>
-        Estamos aquí para ti en cada paso del camino. Ya sea que necesites asesoramiento sobre las decoraciones más adecuadas, ideas creativas para tu tema o <br>
-        simplemente quieras consultar sobre disponibilidad, no dudes en escribirnos.<br><br>
-        Recuerda que en Magic Balloons la satisfacción del cliente es nuestra prioridad. 
-        <br>Tu felicidad es nuestro mayor logro, y estamos comprometidos a brindarte un servicio excepcional en cada ocasión.
+        <p> En Magic Balloons, nos apasiona transformar tus sueños en realidades memorables. <br>
+            Ya sea que estés planeando una fiesta de cumpleaños, una boda, una celebración corporativa o cualquier otro evento especial,<br>
+            nuestro equipo está listo para ofrecerte las mejores decoraciones y servicios personalizados.<br><br>
+            Si tienes alguna pregunta sobre nuestros productos, servicios o tarifas, no dudes en ponerte en contacto con nosotros. <br>
+            Nuestro objetivo es ayudarte a crear el ambiente perfecto para tu evento, asegurando que cada detalle esté a la altura de tus expectativas.<br>
+            Estamos aquí para ti en cada paso del camino. Ya sea que necesites asesoramiento sobre las decoraciones más adecuadas, ideas creativas para tu tema o <br>
+            simplemente quieras consultar sobre disponibilidad, no dudes en escribirnos.<br><br>
+            Recuerda que en Magic Balloons la satisfacción del cliente es nuestra prioridad.
+            <br>Tu felicidad es nuestro mayor logro, y estamos comprometidos a brindarte un servicio excepcional en cada ocasión.
         </p>
 
     </div>
 
 
 
-     
-         
-        
+
+
+
     <!-- Map -->
     <div class="container-map">
         <h2 class="h2-map">¿Donde nos encontramos?</h2><br>
@@ -97,7 +97,34 @@
         </iframe>
     </div>
 
-   
+    <div class="formulario-about-us">
+
+        <section id="contact-form">
+            <h2>¡Contáctanos!</h2>
+            <p>¿Quieres saber más sobre nosotros? Completa el formulario y recibe nuestras ofertas especiales y novedades directamente en tu correo.</p><br>
+
+            <form action="#" method="POST">
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Número de teléfono">
+
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address" placeholder="Tu dirección (opcional)">
+
+                <label for="message">Mensaje (Opcional):</label>
+                <textarea id="message" name="message" placeholder="¿Quieres contarnos algo más?"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+
     <!-- Social media-->
 </body>
 

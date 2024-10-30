@@ -72,7 +72,7 @@
 
             <div class="container-cart-products hidden-cart">
                 <div class="row-product">
-                    <!-- <div class="cart-product">
+                    <!-- <div class="cart-product"> 
                          <div class="info-cart-product">
                             <span class="cantidad-producto-carrito"></span>
                             <p class="titulo-producto-carrito"></p>
@@ -134,7 +134,7 @@
                 </a>
 
 
-                <button class="btn-add-cart">Añadir Al carro</button>
+                <button class="btn-add-cart">Añadir al Carro</button>
             </div>
         </div>
 
@@ -176,7 +176,7 @@
                     </svg>
                 </a>
 
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
@@ -214,7 +214,7 @@
                     </svg>
                 </a>
 
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
@@ -251,7 +251,7 @@
                     </svg>
                 </a>
 
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
@@ -288,7 +288,7 @@
                 </a>
 
 
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
@@ -324,7 +324,7 @@
                     </svg>
                 </a>
 
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
     </div>
@@ -341,42 +341,42 @@
 
         <div class="item">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Decoraciones/Decoracion-1.jpg" alt="">
             </figure>
             <div class="info-product">
-                <h2> Ancheta Basica</h2>
-                <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <h2> Memorias Doradas</h2>
+                <p class="precio">$47000</p>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
         <div class="item">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Decoraciones/Decoracion-5.jpg" alt="">
             </figure>
             <div class="info-product">
-                <h2> Ancheta Basica</h2>
-                <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <h2> Estilo Azul Festivo</h2>
+                <p class="precio">$47000</p>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
         <div class="item">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Decoraciones/Decoracion-3.jpg" alt="">
             </figure>
             <div class="info-product">
-                <h2> Ancheta Basica</h2>
-                <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <h2> Fiesta Algodón de Azúcar</h2>
+                <p class="precio">$80000</p>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
         <div class="item">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Decoraciones/Decoracion-4.jpg" alt="">
             </figure>
             <div class="info-product">
-                <h2> Ancheta Basica</h2>
+                <h2> Jardín de Globos</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
     </div>
@@ -389,125 +389,125 @@
 
     <div class="regalos-container">
 
-        <div class="item">
+        <div class="item-regalo">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Regalos/Regalo-1.jpg" alt="">
             </figure>
-            <div class="info-product">
+            <div class="info-product-regalo">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
 
-        <div class="item">
+        <div class="item-regalo">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Regalos/Regalo-2.jpg" alt="">
             </figure>
-            <div class="info-product">
+            <div class="info-product-regalo">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
-        <div class="item">
+        <div class="item-regalo">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Regalos/Regalo-3.jpg" alt="">
             </figure>
-            <div class="info-product">
+            <div class="info-product-regalo">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
-        <div class="item">
+        <div class="item-regalo">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Regalos/Regalo-4.jpg" alt="">
             </figure>
-            <div class="info-product">
+            <div class="info-product-regalo">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
-        <div class="item">
+        <div class="item-regalo">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Regalos/Regalo-5.jpg" alt="">
             </figure>
-            <div class="info-product">
+            <div class="info-product-regalo">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
-        <div class="item">
+        <div class="item-regalo">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Regalos/Regalo-6.jpg" alt="">
             </figure>
-            <div class="info-product">
+            <div class="info-product-regalo">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
-        <div class="item">
+        <div class="item-regalo">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Regalos/Regalo-7.jpg" alt="">
             </figure>
-            <div class="info-product">
+            <div class="info-product-regalo">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
-        <div class="item">
+        <div class="item-regalo">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Regalos/Regalo-8.jpg" alt="">
             </figure>
-            <div class="info-product">
+            <div class="info-product-regalo">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
-        <div class="item">
+        <div class="item-regalo">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Regalos/Regalo-9.jpg" alt="">
             </figure>
-            <div class="info-product">
+            <div class="info-product-regalo">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
-        <div class="item">
+        <div class="item-regalo">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Regalos/Regalo-10.jpg" alt="">
             </figure>
-            <div class="info-product">
+            <div class="info-product-regalo">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 
-        <div class="item">
+        <div class="item-regalo">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Regalos/Regalo-11.jpg" alt="">
             </figure>
-            <div class="info-product">
+            <div class="info-product-regalo">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
     </div>
@@ -522,42 +522,42 @@
     <div class="bouquets-container">
         <div class="item">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Bouquets/Bouquets-1.jpg" alt="">
             </figure>
             <div class="info-product">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
         <div class="item">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Bouquets/Bouquets-2.jpg" alt="">
             </figure>
             <div class="info-product">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
         <div class="item">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Bouquets/Bouquets-3.jpg" alt="">
             </figure>
             <div class="info-product">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
         <div class="item">
             <figure>
-                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+                <img class="imagen-catalogo" src="../Img/Bouquets/Bouquets-4.jpg" alt="">
             </figure>
             <div class="info-product">
-                <h2> Ancheta Basica</h2>
+                <h2> Decoracion Tipo</h2>
                 <p class="precio">$20000</p>
-                <button class="btn-add-cart" button>Añadir Al carro</button>
+                <button class="btn-add-cart" button>Añadir al Carro</button>
             </div>
         </div>
 

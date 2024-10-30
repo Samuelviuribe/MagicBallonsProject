@@ -14,7 +14,7 @@ const rowProduct = document.querySelector('.row-product');
 
 // Lista de contenedores
 
-const producstList = document.querySelector('.cointainer-items');
+ 
 
 
 
@@ -30,41 +30,41 @@ const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
 
 
-producstList.addEventListener('click', e => {
+// Selecciona todos los botones "Añadir al Carro"
+const addCartButtons = document.querySelectorAll('.btn-add-cart');
 
-     if (e.target.classList.contains('btn-add-cart')) {
-          const product = e.target.parentElement;
+// Escucha el clic en cada botón
+addCartButtons.forEach(button => {
+    button.addEventListener('click', e => {
+        const product = e.target.parentElement;
 
-          const infoProduct = {
-               quantity: 1,
-               title: product.querySelector('h2').textContent,
-               price: product.querySelector('p').textContent,
-          };
-          const exits = allProducts.some(product => product.title === infoProduct.title);
-          console.log(exits)
+        const infoProduct = {
+            quantity: 1,
+            title: product.querySelector('h2').textContent,
+            price: product.querySelector('p').textContent,
+        };
 
-          if (exits) {
-               const products = allProducts.map(product => {
-                    if (product.title === infoProduct.title) {
-                         product.quantity++;
-                         return product;
-                    } else {
-                         return product;
-                    }
-               })
-               allProducts = [...products];
-          } else {
+        // Verifica si el producto ya está en el carrito
+        const exists = allProducts.some(item => item.title === infoProduct.title);
 
-               allProducts = [...allProducts, infoProduct];
-          }
+        if (exists) {
+            // Si existe, incrementa la cantidad
+            allProducts = allProducts.map(item => {
+                if (item.title === infoProduct.title) {
+                    item.quantity++;
+                }
+                return item;
+            });
+        } else {
+            // Si no existe, agrega el producto al carrito
+            allProducts = [...allProducts, infoProduct];
+        }
 
-
-          showHtml();
-     }
-
-
-
+        // Actualiza el HTML del carrito
+        showHtml();
+    });
 });
+
 
 //eliminar
 
@@ -141,7 +141,7 @@ const showHtml = () => {
 // document.querySelectorAll('.btn-edit-cart').forEach(btn => {
 //      btn.addEventListener('click', function (event) {
 //          event.preventDefault(); // Evita el comportamiento predeterminado del enlace
- 
+
 //          // Obtiene los valores de los atributos data-*
 //          const producto = this.getAttribute('data-producto');
 //          const precio = this.getAttribute('data-precio');
@@ -151,61 +151,60 @@ const showHtml = () => {
 //          const objeto1 = this.getAttribute('data-objetos-1');
 //          const objeto2 = this.getAttribute('data-objetos-2');
 //          const objeto3 = this.getAttribute('data-objetos-3');
- 
+
 //          // Crea la URL con parámetros en una sola línea
 //          const url = `AnidedPages/Customise.php?producto=${encodeURIComponent(producto)}&precio=${encodeURIComponent(precio)}&cantidadDulces=${encodeURIComponent(cantidadDulces)}&imagen=${encodeURIComponent(imagen)}&dedicatoria=${encodeURIComponent(dedicatoria)}&objeto1=${encodeURIComponent(objeto1)}&objeto2=${encodeURIComponent(objeto2)}&objeto3=${encodeURIComponent(objeto3)}`;
-         
+
 //          console.log(url);
 //          // Abre la nueva pestaña con la URL construida
 //          window.open(url, '_blank');
 //      });
 //  });
- 
+
 
 document.querySelectorAll('.btn-edit-cart').forEach(btn => {
      btn.addEventListener('click', function (event) {
-         event.preventDefault();
- 
-         // Obtén los valores de los atributos data-*
-         const producto = this.getAttribute('data-producto');
-         const precio = this.getAttribute('data-precio');
-         const cantidadDulces = this.getAttribute('data-cantidad-dulces');
-         const globos = this.getAttribute('data-cantidad-globos');
-         const cantidadBebidas = this.getAttribute('data-cantidad-botellas');
-         const imagen = this.getAttribute('data-imagen');
-         const dedicatoria = this.getAttribute('data-nombre-dedicatorio');
-         const objeto1 = this.getAttribute('data-objetos-1');
-         const objeto2 = this.getAttribute('data-objetos-2');
-         const objeto3 = this.getAttribute('data-objetos-3');
-         const adicional1 = this.getAttribute('data-adicionales-1');
-         const adicional2 = this.getAttribute('data-adicionales-2');
-         const adicional3 = this.getAttribute('data-adicionales-3');
-         const adicional4 = this.getAttribute('data-adicionales-4');
-         const frutas1 = this.getAttribute('data-frutas-1');
-         const frutas2 = this.getAttribute('data-frutas-2');
-         const frutas3 = this.getAttribute('data-frutas-3');
-         const frutas4 = this.getAttribute('data-frutas-4');
-         const frutas5 = this.getAttribute('data-frutas-5');
-          
-         // Crea un formulario dinámico
-         const form = document.createElement('form');
-         form.method = 'POST';
-         form.action = 'AnidedPages/Customise.php';
-         form.target = '_blank'; // Para abrir en una nueva pestaña
- 
-         // Agrega los datos como campos ocultos
-         const data = { producto, precio, cantidadDulces, globos,cantidadBebidas ,imagen, dedicatoria, objeto1, objeto2, objeto3, adicional1, adicional2, adicional3, adicional4, frutas1, frutas2, frutas3, frutas4, frutas5 };
-         for (const key in data) {
-             const input = document.createElement('input');
-             input.type = 'hidden';
-             input.name = key;
-             input.value = data[key];
-             form.appendChild(input);
-         }
- 
-         document.body.appendChild(form);
-         form.submit();
-         document.body.removeChild(form); // Limpia el formulario después de enviarlo
+          event.preventDefault();
+
+          // Obtén los valores de los atributos data-*
+          const producto = this.getAttribute('data-producto');
+          const precio = this.getAttribute('data-precio');
+          const cantidadDulces = this.getAttribute('data-cantidad-dulces');
+          const globos = this.getAttribute('data-cantidad-globos');
+          const cantidadBebidas = this.getAttribute('data-cantidad-botellas');
+          const imagen = this.getAttribute('data-imagen');
+          const dedicatoria = this.getAttribute('data-nombre-dedicatorio');
+          const objeto1 = this.getAttribute('data-objetos-1');
+          const objeto2 = this.getAttribute('data-objetos-2');
+          const objeto3 = this.getAttribute('data-objetos-3');
+          const adicional1 = this.getAttribute('data-adicionales-1');
+          const adicional2 = this.getAttribute('data-adicionales-2');
+          const adicional3 = this.getAttribute('data-adicionales-3');
+          const adicional4 = this.getAttribute('data-adicionales-4');
+          const frutas1 = this.getAttribute('data-frutas-1');
+          const frutas2 = this.getAttribute('data-frutas-2');
+          const frutas3 = this.getAttribute('data-frutas-3');
+          const frutas4 = this.getAttribute('data-frutas-4');
+          const frutas5 = this.getAttribute('data-frutas-5');
+
+          // Crea un formulario dinámico
+          const form = document.createElement('form');
+          form.method = 'POST';
+          form.action = 'AnidedPages/Customise.php';
+          form.target = '_blank'; // Para abrir en una nueva pestaña
+
+          // Agrega los datos como campos ocultos
+          const data = { producto, precio, cantidadDulces, globos, cantidadBebidas, imagen, dedicatoria, objeto1, objeto2, objeto3, adicional1, adicional2, adicional3, adicional4, frutas1, frutas2, frutas3, frutas4, frutas5 };
+          for (const key in data) {
+               const input = document.createElement('input');
+               input.type = 'hidden';
+               input.name = key;
+               input.value = data[key];
+               form.appendChild(input);
+          }
+
+          document.body.appendChild(form);
+          form.submit();
+          document.body.removeChild(form); // Limpia el formulario después de enviarlo
      });
- });
- 
+});
