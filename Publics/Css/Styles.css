@@ -215,21 +215,21 @@
      max-width: 100%;
  }
 
- .catalogo-title{
-    display: flex;
-    font-weight: 500;
-    background-color: #f7f7f7;
-}
+ .catalogo-title {
+     display: flex;
+     font-weight: 500;
+     background-color: #f7f7f7;
+ }
 
 
 
- /* Main */
+ /* catalogo_anchetas */
 
  .cointainer-items {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      gap: 20px;
-    padding: 5%;
+     padding: 5%;
  }
 
  .item {
@@ -248,7 +248,7 @@
      flex-direction: column;
      gap: 10px;
  }
- 
+
 
  .item img {
      width: 100%;
@@ -282,18 +282,18 @@
      cursor: pointer;
  }
 
- .btn-add-cart{
-    /* align-self: flex-end; */
-    width: 50%;
+ .btn-add-cart {
+     /* align-self: flex-end; */
+     width: 50%;
  }
 
- .btn-edit-cart{
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
+ .btn-edit-cart {
+     width: 30px;
+     height: 30px;
+     overflow: hidden;
  }
- 
-    
+
+
 
  .count-products {
      position: absolute;
@@ -386,6 +386,32 @@
      font-weight: 900;
  }
 
+ /* catalogo_decoraciones*/
+ .decoraciones-container {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+     padding: 5%;
+ }
+
+
+ /*catalogo_bouquets*/
+
+ .regalos-container {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 20px 5px;
+     padding: 5%;
+ }
+
+ /*Bouquets container*/
+ .bouquets-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 5px;
+    padding: 5%;
+}
+ 
 
  /* Icons */
  .icon-close {
@@ -478,11 +504,11 @@
  }
 
  .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;     
-    gap: 3.5rem;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 30px;
+     gap: 3.5rem;
      background-color: grey;
      position: absolute;
      left: 0;
@@ -496,7 +522,8 @@
  }
 
  .footer-content img {
-   width:  200px;
+     width: 200px;
+     height: auto;
  }
 
  .footer-content li {
@@ -512,145 +539,141 @@
      overflow: hidden;
  }
 
-  .footer-content li a:hover {
-  transform: translateY(3px) translateX(5px);
-  color: #fff;
-  }
+ .footer-content li a:hover {
+     transform: translateY(3px) translateX(5px);
+     color: #fff;
+ }
 
-  .footer-content p {
-    color: #000;
-    font-size: 16px;
-    line-height: 30px;
-    margin: 18px 0;
-  }
-
-
-.footer-icons a{
-    display: inline-block;
-    font-size: 22px;
-    color: gold;
-    margin-top: 5px;
-    margin-right: 17px;
-    transition: all .40s ease;
-}
-
-.footer-icons a:hover{
-transform: scale(1.1);
-    transform: translateY(-5px);
-}
+ .footer-content p {
+     color: #000;
+     font-size: 16px;
+     line-height: 30px;
+     margin: 18px 0;
+ }
 
 
-/*customize*/
+ .footer-icons a {
+     display: inline;
+     font-size: 22px;
+     color: gold;
+     margin-top: 5px;
+     margin-right: 17px;
+     transition: all .40s ease;
+ }
 
-.header-custom{
-    display: flex;
-    align-items: center;
-    padding: 30px;
-    justify-content: center;
-}
+ .footer-icons a:hover {
+     transform: scale(1.1);
+     transform: translateY(-5px);
+ }
 
-.container-custom{
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-   
-}
 
-.container-img-customize{
-    margin-top: 70px;
-    max-width: 500px;
-    max-height: 600px;
-    overflow: hidden;
-    background-color: #f7f7f9;
-}    
+ /*customize*/
 
-#imagen-custom{
-    object-fit: cover; 
-    width: 100%;
-    height: 100%;
-}
+ .header-custom {
+     display: flex;
+     align-items: center;
+     padding: 30px;
+     justify-content: center;
+ }
 
-.container-details-customize-product{
+ .container-custom {
+     display: flex;
+     max-width: 1200px;
+     margin: 0 auto;
+
+ }
+
+ .container-img-customize {
+     margin-top: 70px;
+     max-width: 500px;
+     max-height: 600px;
+     overflow: hidden;
+     background-color: #f7f7f9;
+ }
+
+ #imagen-custom {
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+ }
+
+ .container-details-customize-product {
      display: flex;
      flex-direction: column;
      margin: 30px;
-     width:60%;
+     width: 60%;
      min-width: 100px;
      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
      background-color: #f5f5f5;
-}   
+ }
 
-.container-details-customize-product .item-custom {
-    margin: 10px;
-    padding: 15px;
-}
-
-
-.precio{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+ .container-details-customize-product .item-custom {
+     margin: 10px;
+     padding: 15px;
+ }
 
 
-.precio span{
-    font-size: 24px;
-    font-weight: 300;
-}
-
-.container-details-customize-product{
-    padding: 30px 0;
-}
-
-.objetos label{
-    width: 100px;
-    color: #222;
-    font-weight: 700;
-
-}
+ .precio {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
 
 
-.objetos  select{
-    width: 300px;
-    border: none;
-    padding: 12px 15px;
-    background-color: #f7f7f7;
-    outline: none;
-    color:#000000;
-}
-.frutas select{
-    width: 300px;
-    border: none;
-    padding: 12px 15px;
-    background-color: #f7f7f7;
-    outline: none;
-    color:#000000;
-}
+ .precio span {
+     font-size: 24px;
+     font-weight: 300;
+ }
 
-.input-quantity {
- position: relative;
-}
+ .container-details-customize-product {
+     padding: 30px 0;
+ }
 
-.input-quantity{
-    background-color: #f7f7f7;
-    border: none;
-    padding: 10px;
-    width: 60px;
-    height: 30px;
-    color: #000000;
-    font-weight: 500;
-}
+ .objetos label {
+     width: 100px;
+     color: #222;
+     font-weight: 700;
+
+ }
 
 
+ .objetos select {
+     width: 300px;
+     border: none;
+     padding: 12px 15px;
+     background-color: #f7f7f7;
+     outline: none;
+     color: #000000;
+ }
 
-/*Eliminar botoncitos de aumento y decremento*/
-/* .input-quantity::-webkit-inner-spin-button,
+ .frutas select {
+     width: 300px;
+     border: none;
+     padding: 12px 15px;
+     background-color: #f7f7f7;
+     outline: none;
+     color: #000000;
+ }
+
+ .input-quantity {
+     position: relative;
+ }
+
+ .input-quantity {
+     background-color: #f7f7f7;
+     border: none;
+     padding: 10px;
+     width: 60px;
+     height: 30px;
+     color: #000000;
+     font-weight: 500;
+ }
+
+
+
+ /*Eliminar botoncitos de aumento y decremento*/
+ /* .input-quantity::-webkit-inner-spin-button,
 .input-quantity::-webkit-outer-spin-button{
     -webkit-appearence:none;
     appearance: none;
 } */
-
-.precio-total{
-    
-
-}

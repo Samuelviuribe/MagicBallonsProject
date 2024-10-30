@@ -16,7 +16,6 @@
     <div class="hero">
         <nav>
             <img src="../Img/Logo/icono-principal-black.png" alt="" class="logo-principal">
-
             <ul>
                 <li><a class="headLink" href="../../Index.php">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon-nav">
@@ -263,6 +262,32 @@
             <div class="info-product">
                 <h2> Ancheta Roja</h2>
                 <p class="precio">$40000</p>
+                <a href="AnidedPages/Customise.php"
+                    class="btn-edit-cart"
+                    data-producto="Ancheta Roja"
+                    data-precio="27000"
+                    data-cantidad-dulces="9"
+                    data-cantidad-globos="1"
+                    data-cantidad-botellas="0"
+                    data-objetos-1=""
+                    data-objetos-2="Tarjeta"
+                    data-objetos-3=""
+                    data-imagen="../Img/Catalogo/Ancheta-5.jpg"
+                    data-frutas-1="Fresas"
+                    data-frutas-2="Manzanas"
+                    data-frutas-3="Peras"
+                    data-frutas-4="Uvas"
+                    data-frutas-5="Melocotones"
+                    data-tamaño="Mediano"
+
+                    id="personalizar-btn-1">
+                    <!-- Icono de SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon-customise">
+                        <path d="M464 6.1c9.5-8.5 24-8.1 33 .9l8 8c9 9 9.4 23.5 .9 33l-85.8 95.9c-2.6 2.9-4.1 6.7-4.1 10.7l0 21.4c0 8.8-7.2 16-16 16l-15.8 0c-4.6 0-8.9 1.9-11.9 5.3L100.7 500.9C94.3 508 85.3 512 75.8 512c-8.8 0-17.3-3.5-23.5-9.8L9.7 459.7C3.5 453.4 0 445 0 436.2c0-9.5 4-18.5 11.1-24.8l111.6-99.8c3.4-3 5.3-7.4 5.3-11.9l0-27.6c0-8.8 7.2-16 16-16l34.6 0c3.9 0 7.7-1.5 10.7-4.1L464 6.1zM432 288c3.6 0 6.7 2.4 7.7 5.8l14.8 51.7 51.7 14.8c3.4 1 5.8 4.1 5.8 7.7s-2.4 6.7-5.8 7.7l-51.7 14.8-14.8 51.7c-1 3.4-4.1 5.8-7.7 5.8s-6.7-2.4-7.7-5.8l-14.8-51.7-51.7-14.8c-3.4-1-5.8-4.1-5.8-7.7s2.4-6.7 5.8-7.7l51.7-14.8 14.8-51.7c1-3.4 4.1-5.8 7.7-5.8zM87.7 69.8l14.8 51.7 51.7 14.8c3.4 1 5.8 4.1 5.8 7.7s-2.4 6.7-5.8 7.7l-51.7 14.8L87.7 218.2c-1 3.4-4.1 5.8-7.7 5.8s-6.7-2.4-7.7-5.8L57.5 166.5 5.8 151.7c-3.4-1-5.8-4.1-5.8-7.7s2.4-6.7 5.8-7.7l51.7-14.8L72.3 69.8c1-3.4 4.1-5.8 7.7-5.8s6.7 2.4 7.7 5.8zM208 0c3.7 0 6.9 2.5 7.8 6.1l6.8 27.3 27.3 6.8c3.6 .9 6.1 4.1 6.1 7.8s-2.5 6.9-6.1 7.8l-27.3 6.8-6.8 27.3c-.9 3.6-4.1 6.1-7.8 6.1s-6.9-2.5-7.8-6.1l-6.8-27.3-27.3-6.8c-3.6-.9-6.1-4.1-6.1-7.8s2.5-6.9 6.1-7.8l27.3-6.8 6.8-27.3c.9-3.6 4.1-6.1 7.8-6.1z" />
+                    </svg>
+                </a>
+
+
                 <button class="btn-add-cart" button>Añadir Al carro</button>
             </div>
         </div>
@@ -274,10 +299,37 @@
             <div class="info-product">
                 <h2> Ancheta Basica</h2>
                 <p class="precio">$20000</p>
+                <a href="AnidedPages/Customise.php"
+                    class="btn-edit-cart"
+                    data-producto="Ancheta Basica"
+                    data-precio="27000"
+                    data-cantidad-dulces="9"
+                    data-cantidad-globos="1"
+                    data-cantidad-botellas="0"
+                    data-objetos-1=""
+                    data-objetos-2="Tarjeta"
+                    data-objetos-3="" s
+                    data-imagen="../Img/Catalogo/Ancheta-6.jpg"
+                    data-frutas-1="Fresas"
+                    data-frutas-2="Manzanas"
+                    data-frutas-3="Peras"
+                    data-frutas-4="Uvas"
+                    data-frutas-5="Melocotones"
+                    data-tamaño="Mediano"
+
+                    id="personalizar-btn-1">
+                    <!-- Icono de SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon-customise">
+                        <path d="M464 6.1c9.5-8.5 24-8.1 33 .9l8 8c9 9 9.4 23.5 .9 33l-85.8 95.9c-2.6 2.9-4.1 6.7-4.1 10.7l0 21.4c0 8.8-7.2 16-16 16l-15.8 0c-4.6 0-8.9 1.9-11.9 5.3L100.7 500.9C94.3 508 85.3 512 75.8 512c-8.8 0-17.3-3.5-23.5-9.8L9.7 459.7C3.5 453.4 0 445 0 436.2c0-9.5 4-18.5 11.1-24.8l111.6-99.8c3.4-3 5.3-7.4 5.3-11.9l0-27.6c0-8.8 7.2-16 16-16l34.6 0c3.9 0 7.7-1.5 10.7-4.1L464 6.1zM432 288c3.6 0 6.7 2.4 7.7 5.8l14.8 51.7 51.7 14.8c3.4 1 5.8 4.1 5.8 7.7s-2.4 6.7-5.8 7.7l-51.7 14.8-14.8 51.7c-1 3.4-4.1 5.8-7.7 5.8s-6.7-2.4-7.7-5.8l-14.8-51.7-51.7-14.8c-3.4-1-5.8-4.1-5.8-7.7s2.4-6.7 5.8-7.7l51.7-14.8 14.8-51.7c1-3.4 4.1-5.8 7.7-5.8zM87.7 69.8l14.8 51.7 51.7 14.8c3.4 1 5.8 4.1 5.8 7.7s-2.4 6.7-5.8 7.7l-51.7 14.8L87.7 218.2c-1 3.4-4.1 5.8-7.7 5.8s-6.7-2.4-7.7-5.8L57.5 166.5 5.8 151.7c-3.4-1-5.8-4.1-5.8-7.7s2.4-6.7 5.8-7.7l51.7-14.8L72.3 69.8c1-3.4 4.1-5.8 7.7-5.8s6.7 2.4 7.7 5.8zM208 0c3.7 0 6.9 2.5 7.8 6.1l6.8 27.3 27.3 6.8c3.6 .9 6.1 4.1 6.1 7.8s-2.5 6.9-6.1 7.8l-27.3 6.8-6.8 27.3c-.9 3.6-4.1 6.1-7.8 6.1s-6.9-2.5-7.8-6.1l-6.8-27.3-27.3-6.8c-3.6-.9-6.1-4.1-6.1-7.8s2.5-6.9 6.1-7.8l27.3-6.8 6.8-27.3c.9-3.6 4.1-6.1 7.8-6.1z" />
+                    </svg>
+                </a>
+
                 <button class="btn-add-cart" button>Añadir Al carro</button>
             </div>
         </div>
     </div>
+
+    <!-- 2da seccion -->
 
 
     <div class="catalogo-title">
@@ -297,6 +349,218 @@
                 <button class="btn-add-cart" button>Añadir Al carro</button>
             </div>
         </div>
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3ra seccion -->
+
+    <div class="catalogo-title">
+        <h1> Regalos </h1>
+    </div>
+
+    <div class="regalos-container">
+
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4ta seccion -->
+
+    <div class="catalogo-title">
+        <h1> Bouquets </h1>
+    </div>
+
+
+    <div class="bouquets-container">
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img class="imagen-catalogo" src="../Img/Catalogo/Ancheta-6.jpg" alt="">
+            </figure>
+            <div class="info-product">
+                <h2> Ancheta Basica</h2>
+                <p class="precio">$20000</p>
+                <button class="btn-add-cart" button>Añadir Al carro</button>
+            </div>
+        </div>
+
     </div>
 
     <script src="../Js/index.js"></script>

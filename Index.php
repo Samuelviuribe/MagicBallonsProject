@@ -27,20 +27,8 @@
                  0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
                         </svg>
                     </a></li>
-                <li><a class="headLink" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon-nav">
-                            <path d="M200.6 32C205 19.5 198.5 5.8 186 1.4S159.8 3.5 155.4 16L144.7 46.2l-9.9-29.8C130.6 
-                3.8 117-3 104.4 1.2S85 19 89.2 31.6l8.3 25-27.4-20c-10.7-7.8-25.7-5.4-33.5 5.3s-5.4 25.7 5.3 
-                33.5L70.2 96 48 96C21.5 96 0 117.5 0 144L0 464c0 26.5 21.5 48 48 
-                48l152.6 0c-5.4-9.4-8.6-20.3-8.6-32l0-224c0-29.9 20.5-55 48.2-62c1.8-31 17.1-58.2 40.1-76.1C271.7 
-                104.7 256.9 96 240 96l-22.2 0 28.3-20.6c10.7-7.8 13.1-22.8 5.3-33.5s-22.8-13.1-33.5-5.3L192.5 55.1 
-                200.6 32zM363.5 185.5L393.1 224 344 224c-13.3 0-24-10.7-24-24c0-13.1 10.8-24 24.2-24c7.6 0 14.7 3.5 
-                19.3 9.5zM272 200c0 8.4 1.4 16.5 4.1 24l-4.1 0c-26.5 0-48 21.5-48 48l0 80 192 0 0-96 32 0 0 96 192 0 
-                0-80c0-26.5-21.5-48-48-48l-4.1 0c2.7-7.5 4.1-15.6 4.1-24c0-39.9-32.5-72-72.2-72c-22.4 0-43.6 10.4-57.3 
-                28.2L432 195.8l-30.5-39.6c-13.7-17.8-35-28.2-57.3-28.2c-39.7 0-72.2 32.1-72.2 72zM224 464c0 26.5 21.5 48 
-                48 48l144 0 0-128-192 0 0 80zm224 48l144 0c26.5 0 48-21.5 48-48l0-80-192 0 0 128zm96-312c0 13.3-10.7 24-24 
-                24l-49.1 0 29.6-38.5c4.6-5.9 11.7-9.5 19.3-9.5c13.4 0 24.2 10.9 24.2 24z" />
-                        </svg>
+                <li><a class="headLink" href="Publics/Pages/MagicBalloons.php">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon-nav"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z"/></svg>
                     </a></li>
                 <li><a class="headLink" href="Publics/Pages/AboutUs.php">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="icon-nav">
@@ -103,13 +91,15 @@
 
     <!-- Cartas -->
     <div class="container_cards">
+
         <div class="card">
             <figure>
-                <img src="Publics/Img/Slider/Slider1.jpg" alt="">
+                <a href="#">
+                    <img src="Publics/Img/Decoraciones/Decoracion-4.jpg" alt="">
             </figure>
             <div class="contenido">
                 <h3>Decoraciones</h3>
-                <a href="#" class="btn-btn-1">Mas informacion</a>
+                </a>
             </div>
         </div>
 
@@ -117,11 +107,12 @@
 
         <div class="card">
             <figure>
-                <img src="Publics/Img/Regalos/Regalo-1.jpg" alt="">
+                <a href="#">
+                    <img src="Publics/Img/Bouquets/Bouquets-4.jpg" alt="">
             </figure>
             <div class="contenido">
-                <h3>Regalos</h3>
-                <a href="#" class="btn-btn-2">Mas informacion</a>
+                <h3>Bouquets</h3>
+                </a>
             </div>
         </div>
 
@@ -129,42 +120,47 @@
 
         <div class="card">
             <figure>
-                <img src="Publics/Img/Slider/Slider1.jpg" alt="">
+                <a href="#">
+                    <img src="Publics/Img/Slider/Slider1.jpg" alt="">
             </figure>
             <div class="contenido">
                 <h3>Alquiler</h3>
-                <a href="#" class="btn-btn-3">Mas informacion</a>
+                </a>
             </div>
         </div>
 
 
         <div class="card">
             <figure>
-                <img src="Publics/Img/Slider/Slider1.jpg" alt="">
+                <a href="#">
+
+                    <img src="Publics/Img/FiestasTematicas/FiestaTematica-1.jpg" alt="">
             </figure>
             <div class="contenido">
                 <h3>Fiestas tematicas</h3>
-                <a href="#" class="btn-btn-4">Mas informacion</a>
+                </a>
             </div>
         </div>
 
         <div class="card">
             <figure>
-                <img src="Publics/Img/Slider/Slider1.jpg" alt="">
+                <a href="#">
+                    <img src="Publics/Img/Regalos/Regalo-2.jpg" alt="">
             </figure>
             <div class="contenido">
-                <h3>Bouquets de globos</h3>
-                <a href="#" class="btn-btn-4">Mas informacion</a>
+                <h3>Regalos</h3>
+                </a>
             </div>
         </div>
 
         <div class="card">
             <figure>
-                <img src="Publics/Img/Slider/Slider1.jpg" alt="">
+                <a href="#">
+                    <img src="Publics/Img/Catalogo/Ancheta-3.jpg" alt="">
             </figure>
             <div class="contenido">
                 <h3>Anchetas</h3>
-                <a href="#" class="btn-btn-4">Mas informacion</a>
+                </a>
             </div>
         </div>
     </div>
@@ -176,10 +172,10 @@
             <p>En Magic Balloons, nos especializamos en hacer de <br>cada celebración un momento inolvidable.</p>
 
             <div class="footer-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
             </div>
         </div>
 
@@ -213,15 +209,6 @@
             <li><a href="#">Anchets</a></li>
         </div>
 
-        <div class="footer-content">
-            <h4>Movement</h4>
-            <li><a href="#">Decoraciones</a></li>
-            <li><a href="#">Regalos</a></li>
-            <li><a href="#">Alquiler</a></li>
-            <li><a href="#">Fiestas Tematicas</a></li>
-            <li><a href="#">Bouquets de Globos</a></li>
-            <li><a href="#">Anchets</a></li>
-        </div>
     </section>
 </body>
 
