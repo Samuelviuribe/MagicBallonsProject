@@ -15,9 +15,9 @@
 
     <div class="hero">
         <nav>
-            <img src="Publics/Img/Logo/icono-principal-black.png" alt="" class="logo-principal">
+            <img src="Publics/Img/Logo/icono-principal-black.png" alt="" class="logo-principal" >
             <ul>
-                <li><a class="headLink" href="Index.php">
+                <li><a class="headLink" href="Index.php" title="Inicio">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon-nav">
                             <path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 
                 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 
@@ -94,7 +94,7 @@
 
         <div class="card">
             <figure>
-                <a href="#">
+                <a href="Publics/Pages/Tienda.php#decoraciones-scroll">
                     <img src="Publics/Img/Decoraciones/Decoracion-4.jpg" alt="">
             </figure>
             <div class="contenido">
@@ -107,7 +107,7 @@
 
         <div class="card">
             <figure>
-                <a href="#">
+                <a href="Publics/Pages/Tienda.php#bouquets-scroll">
                     <img src="Publics/Img/Bouquets/Bouquets-4.jpg" alt="">
             </figure>
             <div class="contenido">
@@ -144,7 +144,7 @@
 
         <div class="card">
             <figure>
-                <a href="#">
+                <a href="Publics/Pages/Tienda.php#regalos-scroll">
                     <img src="Publics/Img/Regalos/Regalo-2.jpg" alt="">
             </figure>
             <div class="contenido">
@@ -155,7 +155,7 @@
 
         <div class="card">
             <figure>
-                <a href="#">
+                <a href="Publics/Pages/Tienda.php#anchetas-scroll">
                     <img src="Publics/Img/Catalogo/Ancheta-3.jpg" alt="">
             </figure>
             <div class="contenido">
