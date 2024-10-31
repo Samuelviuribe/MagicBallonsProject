@@ -11,7 +11,6 @@
 
 <body>
 
-
     <!-- header -->
     <div class="hero">
         <nav>
@@ -39,7 +38,7 @@
                 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
                         </svg>
                     </a></li>
-                <li><a class="headLink" href="Tienda.php">
+                <li><a class="headLink" href="Tienda.php" title="Tienda">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon-nav">
                             <path d="M547.6 103.8L490.3 13.1C485.2 5 476.1 0 466.4 0L109.6 0C99.9 0 90.8 5 85.7 13.1L28.3 
                 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 
@@ -53,39 +52,42 @@
             </ul>
 
         </nav>
+    </div> <hr>
+
+    <div class="container-blog">
+        <section class="about-us-mgcblloons">
+
+        <div class="titulo-blog">
+            <h1>About Us</h1>
+        </div>
+        
+        <div class="contenido-blog"> 
+            <h2 class="subtitulo">¿Quiénes Somos?</h2>
+            <p>Somos <b>Magic Balloons</b>, nos apasiona convertir cada momento especial en un recuerdo inolvidable. Nos especializamos en la creación de decoraciones personalizadas y regalos únicos, diseñados para embellecer cualquier evento, desde pequeñas reuniones hasta grandes celebraciones. Nuestro equipo creativo y profesional se dedica a comprender tus ideas y llevarlas a la realidad, llenando de alegría y encanto cada espacio con decoraciones únicas que capturan la esencia de cada ocasión.</p>
+
+            <h2 class="subtitulo">Nuestra Misión</h2>
+            <p>Nuestra misión es ser más que una empresa de decoración; buscamos ser creadores de momentos. Nos comprometemos a brindar un servicio personalizado y de alta calidad, adaptado a las necesidades y deseos de cada cliente. Creemos que cada celebración es una oportunidad de hacer algo especial, y por eso trabajamos con pasión y detalle, asegurando que cada fiesta esté llena de color, estilo y una atmósfera mágica que permanecerá en los recuerdos de todos.</p>
+
+            <h2 class="subtitulo">Nuestra Visión</h2>
+            <p>En Magic Balloons, miramos al futuro con la ambición de consolidarnos como un referente en el mundo de los eventos y las celebraciones. Aspiramos a que en los próximos 5 años, seamos una casa de eventos reconocida por ofrecer soluciones integrales y experiencias memorables. Como parte de esta visión, planeamos abrir una piñatería especializada, donde los clientes puedan encontrar todo lo que necesitan para hacer de su fiesta una experiencia completa y personalizada. Queremos ser la primera opción para quienes buscan innovar y llenar de magia sus momentos más importantes.</p>
+
+            <h2 class="subtitulo">¿Qué Nos Hace Únicos?</h2>
+            <p>Cada evento es único, y nuestro equipo se dedica a entender tus ideas y transformarlas en decoraciones que reflejen tu estilo y personalidad.</p>
+
+            <h3 class="subtitulo">Calidad y Detalle</h3>
+            <p>Utilizamos materiales de alta calidad y prestamos atención a cada detalle, asegurando que nuestras decoraciones sean tan duraderas como impactantes.</p>
+
+            <h3 class="subtitulo">Atención al Cliente Excepcional</h3>
+            <p>Desde el primer contacto hasta el último detalle del montaje, estamos aquí para ayudarte en cada paso, con una sonrisa y soluciones que se adaptan a ti.</p>
+
+            <h3 class="subtitulo">Innovación y Expansión</h3>
+            <p>Nos mantenemos a la vanguardia en tendencias de decoración y servicios de eventos, y estamos comprometidos a ampliar nuestra oferta con nuevas ideas y productos que sorprendan a nuestros clientes.</p>
+
+            <h2 class="subtitulo">Únete a la Magia de Magic Balloons</h2>
+            <p>Desde el inicio de nuestro viaje, hemos tenido la suerte de ser parte de innumerables celebraciones. Queremos continuar compartiendo la magia y alegría que cada decoración personalizada aporta a las personas. ¡Permítenos hacer realidad tus sueños de fiesta! En Magic Balloons, cada celebración es nuestra inspiración, y nuestro compromiso es llenar tus momentos especiales de magia y color.</p>
+        </section>
+     </div>
     </div>
-
-
-    <section id="about-us-mgcblloons">
-    <h1>About Us</h1>
-
-    <h2>Quiénes Somos</h2>
-    <p>En Magic Balloons, nos apasiona convertir cada momento especial en un recuerdo inolvidable. Nos especializamos en la creación de decoraciones personalizadas y regalos únicos, diseñados para embellecer cualquier evento, desde pequeñas reuniones hasta grandes celebraciones. Nuestro equipo creativo y profesional se dedica a comprender tus ideas y llevarlas a la realidad, llenando de alegría y encanto cada espacio con decoraciones únicas que capturan la esencia de cada ocasión.</p>
-
-    <h2>Nuestra Misión</h2>
-    <p>Nuestra misión es ser más que una empresa de decoración; buscamos ser creadores de momentos. Nos comprometemos a brindar un servicio personalizado y de alta calidad, adaptado a las necesidades y deseos de cada cliente. Creemos que cada celebración es una oportunidad de hacer algo especial, y por eso trabajamos con pasión y detalle, asegurando que cada fiesta esté llena de color, estilo y una atmósfera mágica que permanecerá en los recuerdos de todos.</p>
-
-    <h2>Nuestra Visión</h2>
-    <p>En Magic Balloons, miramos al futuro con la ambición de consolidarnos como un referente en el mundo de los eventos y las celebraciones. Aspiramos a que en los próximos 5 años, seamos una casa de eventos reconocida por ofrecer soluciones integrales y experiencias memorables. Como parte de esta visión, planeamos abrir una piñatería especializada, donde los clientes puedan encontrar todo lo que necesitan para hacer de su fiesta una experiencia completa y personalizada. Queremos ser la primera opción para quienes buscan innovar y llenar de magia sus momentos más importantes.</p>
-
-    <h2>¿Qué Nos Hace Únicos?</h2>
-
-    <h3>Creatividad y Personalización</h3>
-    <p>Cada evento es único, y nuestro equipo se dedica a entender tus ideas y transformarlas en decoraciones que reflejen tu estilo y personalidad.</p>
-
-    <h3>Calidad y Detalle</h3>
-    <p>Utilizamos materiales de alta calidad y prestamos atención a cada detalle, asegurando que nuestras decoraciones sean tan duraderas como impactantes.</p>
-
-    <h3>Atención al Cliente Excepcional</h3>
-    <p>Desde el primer contacto hasta el último detalle del montaje, estamos aquí para ayudarte en cada paso, con una sonrisa y soluciones que se adaptan a ti.</p>
-
-    <h3>Innovación y Expansión</h3>
-    <p>Nos mantenemos a la vanguardia en tendencias de decoración y servicios de eventos, y estamos comprometidos a ampliar nuestra oferta con nuevas ideas y productos que sorprendan a nuestros clientes.</p>
-
-    <h2>Únete a la Magia de Magic Balloons</h2>
-    <p>Desde el inicio de nuestro viaje, hemos tenido la suerte de ser parte de innumerables celebraciones. Queremos continuar compartiendo la magia y alegría que cada decoración personalizada aporta a las personas. ¡Permítenos hacer realidad tus sueños de fiesta! En Magic Balloons, cada celebración es nuestra inspiración, y nuestro compromiso es llenar tus momentos especiales de magia y color.</p>
-</section>
-
 </body>
 
 </html>

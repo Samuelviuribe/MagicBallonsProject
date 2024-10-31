@@ -553,16 +553,21 @@
      padding: 80px 13% 70px;
  }
 
- .footer {
+ .footer-container {
      display: flex;
      align-items: center;
      justify-content: space-between;
-     padding: 30px;
+     padding: 0 0;
+     max-width: 100%;
      gap: 3.5rem;
      background-color: grey;
-     position: absolute;
-     left: 0;
-     right: 0;
+      
+      margin: 0 auto;
+ }
+
+ .footer-content{
+    flex: 1;
+    margin: 0 10px;
  }
 
  .footer-content h4 {
@@ -572,6 +577,7 @@
  }
 
  .footer-content img {
+    padding: 10px 0;
      width: 200px;
      height: auto;
  }
@@ -783,3 +789,56 @@
 }
 
 
+ /* Blog*/
+
+.container-blog{
+    width: 90%;
+    height: auto;
+    margin: 15px 20px;
+    color: black;
+    padding: 10px;
+}
+
+.titulo-blog {
+    
+    font-size: 50px;
+}
+
+
+.subtitulo{
+    font-size: 35px;
+    margin: 25px 10px;
+}
+
+
+.contenido-blog p {
+    font-size: 20px;
+}
+
+
+/*Boton whatsap que pidieron*/
+
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+#whatsapp-button img {
+    width: auto;
+    height: auto;
+}
+
+#whatsapp-button:hover {
+    transform: scale(1.2);
+}

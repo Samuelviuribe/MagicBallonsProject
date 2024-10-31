@@ -27,7 +27,7 @@
                  0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
                         </svg>
                     </a></li>
-                <li><a class="headLink" href="MagicBalloons.php">
+                <li><a class="headLink" href="MagicBalloons.php" title="¿MagicBallons? ¡Conocenos!">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon-nav">
                             <path d="M184 48l144 0c4.4 0 8 3.6 
                 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 

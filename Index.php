@@ -15,7 +15,7 @@
 
     <div class="hero">
         <nav>
-            <img src="Publics/Img/Logo/icono-principal-black.png" alt="" class="logo-principal" >
+            <img src="Publics/Img/Logo/icono-principal-black.png" alt="" class="logo-principal">
             <ul>
                 <li><a class="headLink" href="Index.php" title="Inicio">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon-nav">
@@ -27,8 +27,10 @@
                  0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
                         </svg>
                     </a></li>
-                <li><a class="headLink" href="Publics/Pages/MagicBalloons.php">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon-nav"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z"/></svg>
+                <li><a class="headLink" href="Publics/Pages/MagicBalloons.php" title="¿MagicBallons? ¡Conocenos!">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon-nav"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z" />
+                        </svg>
                     </a></li>
                 <li><a class="headLink" href="Publics/Pages/AboutUs.php">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="icon-nav">
@@ -42,7 +44,7 @@
                 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
                         </svg>
                     </a></li>
-                <li><a class="headLink" href="Publics/Pages/Tienda.php">
+                <li><a class="headLink" href="Publics/Pages/Tienda.php" title="Tienda">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon-nav">
                             <path d="M547.6 103.8L490.3 13.1C485.2 5 476.1 0 466.4 0L109.6 0C99.9 0 90.8 5 85.7 13.1L28.3 
                 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 
@@ -166,50 +168,64 @@
     </div>
 
     <!-- FOOTER -->
-    <section class="footer">
+    <section class="footer-container">
         <div class="footer-content">
             <img src="Publics/Img/Logo/icono-principal.png" alt="">
             <p>En Magic Balloons, nos especializamos en hacer de <br>cada celebración un momento inolvidable.</p>
+            <p>&copy; 2024 Magic Balloons. Todos los derechos reservados.</p>
 
             <div class="footer-icons">
+
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://wa.me/573183128102" target="_blank" title="whatsapp"><i class="fa-brands fa-whatsapp"></i></i></a>
             </div>
         </div>
 
         <div class="footer-content">
-            <h4>Projects</h4>
-            <li><a href="#">Decoraciones</a></li>
-            <li><a href="#">Regalos</a></li>
-            <li><a href="#">Alquiler</a></li>
-            <li><a href="#">Fiestas Tematicas</a></li>
-            <li><a href="#">Bouquets de Globos</a></li>
-            <li><a href="#">Anchets</a></li>
+            <h4>Proyectos</h4>
+            <ul>
+                <li><a href="#">Decoraciones</a></li>
+                <li><a href="#">Regalos</a></li>
+                <li><a href="#">Alquiler</a></li>
+                <li><a href="#">Fiestas Temáticas</a></li>
+                <li><a href="#">Bouquets de Globos</a></li>
+                <li><a href="#">Anchets</a></li>
+            </ul>
         </div>
 
         <div class="footer-content">
-            <h4>Compañia</h4>
-            <li><a href="#">Decoraciones</a></li>
-            <li><a href="#">Regalos</a></li>
-            <li><a href="#">Alquiler</a></li>
-            <li><a href="#">Fiestas Tematicas</a></li>
-            <li><a href="#">Bouquets de Globos</a></li>
-            <li><a href="#">Anchets</a></li>
+            <h4>Compañía</h4>
+            <ul>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Carreras</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
         </div>
 
         <div class="footer-content">
-            <h4>Movement</h4>
-            <li><a href="#">Decoraciones</a></li>
-            <li><a href="#">Regalos</a></li>
-            <li><a href="#">Alquiler</a></li>
-            <li><a href="#">Fiestas Tematicas</a></li>
-            <li><a href="#">Bouquets de Globos</a></li>
-            <li><a href="#">Anchets</a></li>
-        </div>
+            <h4>Movimiento</h4>
+            <ul>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Tendencias</a></li>
+                <li><a href="#">Iniciativas</a></li>
+                <li><a href="#">Colaboraciones</a></li>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Testimonios</a></li>
+            </ul>
 
+        </div>
     </section>
+
+    <a href="https://wa.me/573183128102" target="_blank" id="whatsapp-button">
+        <img src="Publics/Img/Elements/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <!-- <script src="Publics/Js/index.js"></script> -->
 </body>
 
 </html>

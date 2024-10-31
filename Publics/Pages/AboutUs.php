@@ -24,7 +24,7 @@
                  0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
                         </svg>
                     </a></li>
-                <li><a href="MagicBalloons.php">
+                <li><a href="MagicBalloons.php" title="¿MagicBallons? ¡Conocenos!">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon-nav">
                             <path d="M184 48l144 0c4.4 0 8 3.6 
                 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 
@@ -37,7 +37,7 @@
                             <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 
                 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
                         </svg> </a></li>
-                <li><a href="Tienda.php">
+                <li><a href="Tienda.php" title="Tienda">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon-nav">
                             <path d="M547.6 103.8L490.3 13.1C485.2 5 476.1 0 466.4 0L109.6 0C99.9 0 90.8 5 85.7 13.1L28.3 
                 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c26.1 0 49.3-11.4 65.2-29c15.9 17.6 
@@ -52,6 +52,10 @@
         </nav>
     </div>
     <!-- Navbar -->
+
+    <h1>decoraciones</h1>
+    <h1>fiestas pesonalizadas</h1>
+
 </body>
 
 </html>

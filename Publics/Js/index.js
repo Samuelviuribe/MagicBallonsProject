@@ -208,3 +208,7 @@ document.querySelectorAll('.btn-edit-cart').forEach(btn => {
           document.body.removeChild(form); // Limpia el formulario después de enviarlo
      });
 });
+
+
+
+ 
