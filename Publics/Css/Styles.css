@@ -294,6 +294,11 @@
      overflow: hidden;
  }
 
+.btn-edit-deco {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
  
  .item img {
     width: 100%;
@@ -902,5 +907,28 @@
     transform: scale(1.2);
 }
 
+ 
+  #instagram_post{
+color: purple;
+}
 
+  #Tiktok_post{
+    color: red;
+    }
+    
 
+.titulo_post_ig h1{
+    text-align: center;
+}
+
+.titulo_post_tiktok h1{
+    text-align: center;
+}
+
+.ig__post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+    justify-content: center;  
+  }

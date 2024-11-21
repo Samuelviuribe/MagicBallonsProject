@@ -205,6 +205,58 @@ document.querySelectorAll('.btn-edit-cart').forEach(btn => {
 
           document.body.appendChild(form);
           form.submit();
+          document.body.removeChild(form);  
+     });
+});
+
+//decoraciones
+document.querySelectorAll('.btn-edit-deco').forEach(btn => {
+     btn.addEventListener('click', function (event) {
+          event.preventDefault();
+
+          // Obtén los valores de los atributos data-* desde el botón clicado
+          const producto = this.getAttribute('data-producto');
+          const precio = this.getAttribute('data-precio');
+          const dedicatoria = this.getAttribute('data-nombre-dedicatorio');
+          const imagen = this.getAttribute('data-imagen');
+          const globos = this.getAttribute('data-globos');
+          const arcoGlobos = this.getAttribute('data-arco-globos');
+          const luces = this.getAttribute('data-luces');
+          const columnasGlobos = this.getAttribute('data-columnas-globos');
+          const textoGlobos = this.getAttribute('data-texto-globos');
+          const botellas = this.getAttribute('data-botellas');
+          const frutas = this.getAttribute('data-frutas');
+          const confites = this.getAttribute('data-confites');
+          const pulseras = this.getAttribute('data-pulseras');
+          const anillos = this.getAttribute('data-anillos');
+          const id = this.getAttribute('data-id');
+
+          // Crea un formulario dinámico
+          const form = document.createElement('form');
+          form.method = 'POST';
+          form.action = 'AnidedPages/CustomiseDecorations.php'; // Archivo para editar decoraciones
+          form.target = '_blank'; // Para abrir en una nueva pestaña
+
+          // Crea un objeto con los datos obtenidos
+          const data = {
+               producto, precio, globos, arcoGlobos, luces, columnasGlobos, textoGlobos, 
+               botellas, frutas, confites, pulseras, anillos, id, dedicatoria, imagen
+          };
+
+          // Agrega los datos como campos ocultos al formulario
+          for (const key in data) {
+               if (data[key] !== null && data[key] !== undefined) { // Evita agregar valores nulos o indefinidos
+                    const input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.name = key;
+                    input.value = data[key];
+                    form.appendChild(input);
+               }
+          }
+
+          // Añade y envía el formulario
+          document.body.appendChild(form);
+          form.submit();
           document.body.removeChild(form); // Limpia el formulario después de enviarlo
      });
 });

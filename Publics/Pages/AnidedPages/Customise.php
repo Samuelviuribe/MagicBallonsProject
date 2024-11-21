@@ -51,7 +51,7 @@ $frutas5 = isset($_POST['frutas5']) ? $_POST['frutas5'] : null;
                 </div>
 
                 <div class="custom-icons-share">
-                    <a href="#" id="btn-copy" title="Copiar Link"> 
+                    <a href="#" id="btn-copy" title="Copiar Link">
                         <i class="fa-regular fa-copy"></i>
                     </a>
                     <a href="#" id="btn-compartir" title="Compartir como...">
@@ -69,150 +69,159 @@ $frutas5 = isset($_POST['frutas5']) ? $_POST['frutas5'] : null;
 
             <div class="container-details-customize-product">
 
-                <div class="precio item-custom">
+                <?php if ($precio): ?>
+                    <div class="precio item-custom">
                     <span>
                         <label for="precio">Precio:</label>
                         <span id="precio">$<?php echo htmlspecialchars($precio); ?></span>
                     </span>
-                </div>
-
-                <div class="dulces item-custom">
-                    <label for="cantidad-dulces">Cantidad de Golosinas:</label>
-                    <input class="input-quantity" type="number" id="cantidad-dulces" min="0" value="<?php echo htmlspecialchars($cantidadDulces); ?>">
-                </div>
-
-                <div class="globos item-custom">
-                    <label for="globos">Cantidad De Globos:</label>
-                    <input class="input-quantity" type="number" id="cantidad-de-globos" min="0" value="<?php echo htmlspecialchars($globos); ?>">
-                </div>
-
-                <div class="botellas item-custom">
-                    <label for="bebidas">Cantidad de Bebidas:</label>
-                    <input class="input-quantity" type="number" id="cantidad-de-bebidas" min="0" value="<?php echo htmlspecialchars($cantidadBebidas); ?>">
-                </div>
-
-
-                <?php if ($objeto1 || $objeto2 || $objeto3): ?>
-                    <div class="objetos item-custom">
-                        <label for="objetos">Selecciona un objeto:</label>
-                        <select id="objetos" name="objetos">
-                            <option value=""> Selecciona un objeto adicional </option>
-                            <?php if ($objeto1): ?>
-                                <option value="4000"><?php echo htmlspecialchars($objeto1); ?></option>
-                            <?php endif; ?>
-
-                            <?php if ($objeto2): ?>
-                                <option value="3000"><?php echo htmlspecialchars($objeto2); ?></option>
-                            <?php endif; ?>
-
-                            <?php if ($objeto3): ?>
-                                <option value="2000"><?php echo htmlspecialchars($objeto3); ?></option>
-                            <?php endif; ?>
-                        </select>
-                    </div>
-                <?php endif; ?>
-
-                <?php if ($adicional1 || $adicional2 || $adicional3 || $adicional4): ?>
-                    <div class="adicionales item-custom">
-                        <legend>Selecciona los elementos que deseas añadir:</legend>
-
-                        <?php if ($adicional1): ?>
-                            <label>
-                                <input type="checkbox" name="elementos" value="5000"> <?php echo htmlspecialchars($adicional1); ?>
-                            </label><br>
-                        <?php endif; ?>
-
-                        <?php if ($adicional2): ?>
-                            <label>
-                                <input type="checkbox" name="elementos" value="3000"> <?php echo htmlspecialchars($adicional2); ?>
-                            </label><br>
-                        <?php endif; ?>
-
-                        <?php if ($adicional3): ?>
-                            <label>
-                                <input type="checkbox" name="elementos" value="4000"> <?php echo htmlspecialchars($adicional3); ?>
-                            </label><br>
-                        <?php endif; ?>
-
-                        <?php if ($adicional4): ?>
-                            <label>
-                                <input type="checkbox" name="elementos" value="1000"> <?php echo htmlspecialchars($adicional4); ?>
-                            </label><br>
-                        <?php endif; ?>
-                    </div>
-                <?php endif; ?>
-
-                <?php if ($frutas1 || $frutas2 || $frutas3 || $frutas4 || $frutas5): ?>
-                    <div class="frutas item-custom">
-                        <label for="frutas">Selecciona una fruta:</label>
-                        <select id="frutas" name="frutas">
-                            <option value="0"> Escoja una fruta de preferencia </option>
-                            <?php if ($frutas1): ?>
-                                <option value="2000"><?php echo htmlspecialchars($frutas1); ?></option>
-                            <?php endif; ?>
-                            <?php if ($frutas2): ?>
-                                <option value="3000"><?php echo htmlspecialchars($frutas2); ?></option>
-                            <?php endif; ?>
-                            <?php if ($frutas3): ?>
-                                <option value="2500"><?php echo htmlspecialchars($frutas3); ?></option>
-                            <?php endif; ?>
-                            <?php if ($frutas4): ?>
-                                <option value="1500"><?php echo htmlspecialchars($frutas4); ?></option>
-                            <?php endif; ?>
-                            <?php if ($frutas5): ?>
-                                <option value="1000"><?php echo htmlspecialchars($frutas5); ?></option>
-                            <?php endif; ?>
-                        </select>
-                    </div>
-                <?php endif; ?>
-
-
-
-
-
-
             </div>
+        <?php endif; ?>
 
-            <div class="precio-total">
-                <span class="titulo-precio-custom">
-                    <label for="precio-globos">Costo por Globos :</label>
-                    <span id="precio-globos">$0</span>
-                </span>
-                <br>
-                <span class="titulo-precio-custom">
-                    <label for="precio-dulces">Costo por Dulces :</label>
-                    <span id="precio-dulces">$0</span>
-                </span>
-                <br>
-                <span class="titulo-precio-custom">
-                    <label for="precio-frutas">Costo por Fruta :</label>
-                    <span id="precio-frutas">$0</span>
-                </span>
-                <br>
-                <span class="titulo-precio-custom">
-                    <label for="precio-objetos">Costo por Objeto :</label>
-                    <span id="precio-objetos">$0</span>
-                </span>
-                <br>
-                <span class="titulo-precio-custom">
-                    <label for="precio-bebidas">Costo por Bebida :</label>
-                    <span id="precio-bebidas">$0</span>
-                </span>
-                <br>
-                <span class="titulo-precio-custom">
-                    <label for="precio-adicionales">Costo por Adicionales:</label>
-                    <span id="precio-adicionales">$0</span> <!-- Span para mostrar el costo de adicionales -->
-                </span>
-                <br>
-
-                <!-- pagar precio -->
-                <span class="titulo-precio-custom">
-                    <label for="precio-total">Precio Total (personalizado): <br></label>
-                    <span id="precio-total">$0</span>
-                    <br>
-                </span>
-                <button id="btn-comprar-customice">Comprar</button>
+        <?php if ($cantidadDulces >= 0): ?>
+            <div class="dulces item-custom">
+                <label for="cantidad-dulces">Cantidad de Golosinas:</label>
+                <input class="input-quantity" type="number" id="cantidad-dulces" min="0" value="<?php echo htmlspecialchars($cantidadDulces); ?>">
             </div>
+        <?php endif; ?>
+
+        <?php if ($globos >= 0): ?>
+            <div class="globos item-custom">
+                <label for="globos">Cantidad De Globos:</label>
+                <input class="input-quantity" type="number" id="cantidad-de-globos" min="0" value="<?php echo htmlspecialchars($globos); ?>">
+            </div>
+        <?php endif; ?>
+
+        <?php if ($cantidadBebidas >= 0): ?>
+            <div class="botellas item-custom">
+                <label for="bebidas">Cantidad de Bebidas:</label>
+                <input class="input-quantity" type="number" id="cantidad-de-bebidas" min="0" value="<?php echo htmlspecialchars($cantidadBebidas); ?>">
+            </div>
+        <?php endif; ?>
+
+
+        <?php if (!empty($objeto1) || !empty($objeto2) || !empty($objeto3)): ?>
+    <div class="objetos item-custom">
+        <label for="objetos">Selecciona un objeto:</label>
+        <select id="objetos" name="objetos">
+            <option value=""> Selecciona un objeto adicional </option>
+            <?php if (!empty($objeto1)): ?>
+                <option value="4000"><?php echo htmlspecialchars($objeto1); ?></option>
+            <?php endif; ?>
+
+            <?php if (!empty($objeto2)): ?>
+                <option value="3000"><?php echo htmlspecialchars($objeto2); ?></option>
+            <?php endif; ?>
+
+            <?php if (!empty($objeto3)): ?>
+                <option value="2000"><?php echo htmlspecialchars($objeto3); ?></option>
+            <?php endif; ?>
+        </select>
+    </div>
+<?php endif; ?>
+
+
+        <?php if ($adicional1 || $adicional2 || $adicional3 || $adicional4): ?>
+            <div class="adicionales item-custom">
+                <legend>Selecciona los elementos que deseas añadir:</legend>
+
+                <?php if ($adicional1): ?>
+                    <label>
+                        <input type="checkbox" name="elementos" value="5000"> <?php echo htmlspecialchars($adicional1); ?>
+                    </label><br>
+                <?php endif; ?>
+
+                <?php if ($adicional2): ?>
+                    <label>
+                        <input type="checkbox" name="elementos" value="3000"> <?php echo htmlspecialchars($adicional2); ?>
+                    </label><br>
+                <?php endif; ?>
+
+                <?php if ($adicional3): ?>
+                    <label>
+                        <input type="checkbox" name="elementos" value="4000"> <?php echo htmlspecialchars($adicional3); ?>
+                    </label><br>
+                <?php endif; ?>
+
+                <?php if ($adicional4): ?>
+                    <label>
+                        <input type="checkbox" name="elementos" value="1000"> <?php echo htmlspecialchars($adicional4); ?>
+                    </label><br>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+
+        <?php if ($frutas1 || $frutas2 || $frutas3 || $frutas4 || $frutas5): ?>
+            <div class="frutas item-custom">
+                <label for="frutas">Selecciona una fruta:</label>
+                <select id="frutas" name="frutas">
+                    <option value="0"> Escoja una fruta de preferencia </option>
+                    <?php if ($frutas1): ?>
+                        <option value="2000"><?php echo htmlspecialchars($frutas1); ?></option>
+                    <?php endif; ?>
+                    <?php if ($frutas2): ?>
+                        <option value="3000"><?php echo htmlspecialchars($frutas2); ?></option>
+                    <?php endif; ?>
+                    <?php if ($frutas3): ?>
+                        <option value="2500"><?php echo htmlspecialchars($frutas3); ?></option>
+                    <?php endif; ?>
+                    <?php if ($frutas4): ?>
+                        <option value="1500"><?php echo htmlspecialchars($frutas4); ?></option>
+                    <?php endif; ?>
+                    <?php if ($frutas5): ?>
+                        <option value="1000"><?php echo htmlspecialchars($frutas5); ?></option>
+                    <?php endif; ?>
+                </select>
+            </div>
+        <?php endif; ?>
+
+
+
+
+
+
+        </div>
+
+        <div class="precio-total">
+            <span class="titulo-precio-custom">
+                <label for="precio-globos">Costo por Globos :</label>
+                <span id="precio-globos">$0</span>
+            </span>
+            <br>
+            <span class="titulo-precio-custom">
+                <label for="precio-dulces">Costo por Dulces :</label>
+                <span id="precio-dulces">$0</span>
+            </span>
+            <br>
+            <span class="titulo-precio-custom">
+                <label for="precio-frutas">Costo por Fruta :</label>
+                <span id="precio-frutas">$0</span>
+            </span>
+            <br>
+            <span class="titulo-precio-custom">
+                <label for="precio-objetos">Costo por Objeto :</label>
+                <span id="precio-objetos">$0</span>
+            </span>
+            <br>
+            <span class="titulo-precio-custom">
+                <label for="precio-bebidas">Costo por Bebida :</label>
+                <span id="precio-bebidas">$0</span>
+            </span>
+            <br>
+            <span class="titulo-precio-custom">
+                <label for="precio-adicionales">Costo por Adicionales:</label>
+                <span id="precio-adicionales">$0</span> <!-- Span para mostrar el costo de adicionales -->
+            </span>
+            <br>
+
+            <!-- pagar precio -->
+            <span class="titulo-precio-custom">
+                <label for="precio-total">Precio Total (personalizado): <br></label>
+                <span id="precio-total">$0</span>
+                <br>
+            </span>
+            <button id="btn-comprar-customice">Comprar</button>
+        </div>
 
 
 
@@ -222,7 +231,7 @@ $frutas5 = isset($_POST['frutas5']) ? $_POST['frutas5'] : null;
 
     <script>
         // Variables base
-        // Variables base
+   
         let precioBase = <?php echo $precio; ?>;
         const precioGlobo = 500;
         const precioDulce = 1000;

@@ -177,21 +177,22 @@
             <div class="footer-icons">
 
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://wa.me/573183128102" target="_blank" title="whatsapp"><i class="fa-brands fa-whatsapp"></i></i></a>
+                <a href="https://www.instagram.com/magic_balloons01/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@magicballoons01?_t=8rZ7Gm7iQjf&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://wa.me/573183128102" target="_blank" title="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+
             </div>
         </div>
 
         <div class="footer-content">
             <h4>Proyectos</h4>
             <ul>
-                <li><a href="#">Decoraciones</a></li>
-                <li><a href="#">Regalos</a></li>
+                <li><a href="Publics/Pages/Tienda.php#decoraciones-scroll">Decoraciones</a></li>
+                <li><a href="Publics/Pages/Tienda.php#regalos-scroll">Regalos</a></li>
                 <li><a href="#">Alquiler</a></li>
                 <li><a href="#">Fiestas Temáticas</a></li>
-                <li><a href="#">Bouquets de Globos</a></li>
-                <li><a href="#">Anchets</a></li>
+                <li><a href="Publics/Pages/Tienda.php#bouquets-scroll">Bouquets de Globos</a></li>
+                <li><a href="Publics/Pages/Tienda.php#anchetas-scroll">Anchetas</a></li>
             </ul>
         </div>
 
