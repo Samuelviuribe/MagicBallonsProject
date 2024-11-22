@@ -100,7 +100,7 @@ $id = isset($_POST['id']) ? $_POST['id'] : 'ID no especificado';
                 <?php if (!empty($arcoGlobos)): ?>
                     <div class="arco-globos item-custom">
                         <label for="arco-globos">Selecciona un Arco de Globos:</label>
-                        <select  class="input-quantity"id="arco-globos">
+                        <select class="input-quantity" id="arco-globos">
                             <option value="0" data-cantidad="0">Sin arco</option>
                             <option value="50" data-cantidad="15">Pequeño 50cm*60cm (x68 globos)</option>
                             <option value="80" data-cantidad="21">Mediano 80cm*100cm (x96 globos)</option>
@@ -125,19 +125,19 @@ $id = isset($_POST['id']) ? $_POST['id'] : 'ID no especificado';
                 <?php endif; ?>
 
                 <?php if (!empty($columnasGlobos)): ?>
-    <div class="columnas-globos item-custom">
-        <label for="columnas-globos"> Columnas de globos:</label>
-        <select  class="input-quantity" id="columnas-globos" name="columnas-globos">
-            <option value="0">Sin columnas</option>
-            <option value="1">1 columna</option>
-            <option value="2">2 columnas</option>
-            <option value="3">3 columnas</option>
-            <option value="4">4 columnas</option>
-            <option value="5">5 columnas</option>
-            <!-- Agregar más opciones si es necesario -->
-        </select>
-    </div>
-<?php endif; ?>
+                    <div class="columnas-globos item-custom">
+                        <label for="columnas-globos"> Columnas de globos:</label>
+                        <select class="input-quantity" id="columnas-globos" name="columnas-globos">
+                            <option value="0">Sin columnas</option>
+                            <option value="1">1 columna</option>
+                            <option value="2">2 columnas</option>
+                            <option value="3">3 columnas</option>
+                            <option value="4">4 columnas</option>
+                            <option value="5">5 columnas</option>
+                            <!-- Agregar más opciones si es necesario -->
+                        </select>
+                    </div>
+                <?php endif; ?>
 
 
                 <?php if (!empty($textoGlobos)): ?>
@@ -262,7 +262,7 @@ $id = isset($_POST['id']) ? $_POST['id'] : 'ID no especificado';
         const precioGlobo = 500; // Precio por globo
 
         // Elemento de luces
-         const lucesSelect = document.getElementById("luces");
+        const lucesSelect = document.getElementById("luces");
 
         const precioArco = 1000; // Precio por arco de globos
         const precioLuces = 300; // Precio por luces
@@ -329,7 +329,7 @@ $id = isset($_POST['id']) ? $_POST['id'] : 'ID no especificado';
 
             // Mostrar precios individuales en los elementos correspondientes
             precioGlobosElement.textContent = "$" + costoGlobos;
-            
+
             precioLucesElement.textContent = "$" + precioLuces;
 
             precioColumnasElement.textContent = "$" + costoColumnas;
