@@ -3,7 +3,7 @@ $producto = isset($_POST['producto']) ? $_POST['producto'] : 'Producto no especi
 $imagen = isset($_POST['imagen']) ? $_POST['imagen'] : 'No se permite cambiar los parámetros de configuración para este producto';
 $precio = isset($_POST['precio']) ? $_POST['precio'] : 0;
 $dedicatoria = isset($_POST['dedicatoria']) ? $_POST['dedicatoria'] : null;
-$globos = isset($_POST['globos']) ? $_POST['globos'] : 'No especificado';
+$globos = isset($_POST['globos']) ? $_POST['globos'] : 0;
 $arcoGlobos = isset($_POST['arcoGlobos']) ? $_POST['arcoGlobos'] : 'Sin arco';
 $luces = isset($_POST['luces']) ? $_POST['luces'] : 'Sin luces';
 $columnasGlobos = isset($_POST['columnasGlobos']) ? $_POST['columnasGlobos'] : 'No especificado';
@@ -92,22 +92,19 @@ $id = isset($_POST['id']) ? $_POST['id'] : 'ID no especificado';
 
                 <?php if (!empty($globos)): ?>
                     <div class="globos item-custom">
-                        <label for="globos">Cantidad de Globos:</label>
-                        <select class="input-quantity" id="globos" name="globos">
-                            <?php foreach (explode(",", $globos) as $globo): ?>
-                                <option value="<?php echo htmlspecialchars($globo); ?>"><?php echo htmlspecialchars($globo); ?></option>
-                            <?php endforeach; ?>
-                        </select>
+                        <label for="globos">Cantidad De Globos Adicionales:</label>
+                        <input class="input-quantity" type="number" id="cantidad-de-globos" min="0" value="<?php echo htmlspecialchars($globos); ?>">
                     </div>
                 <?php endif; ?>
 
                 <?php if (!empty($arcoGlobos)): ?>
                     <div class="arco-globos item-custom">
-                        <label for="arco-globos">Selecciona el tipo de arco de globos:</label>
-                        <select class="input-quantity" id="arco-globos" name="arco-globos">
-                            <?php foreach (explode(",", $arcoGlobos) as $arco): ?>
-                                <option value="<?php echo htmlspecialchars($arco); ?>"><?php echo htmlspecialchars($arco); ?></option>
-                            <?php endforeach; ?>
+                        <label for="arco-globos">Selecciona un Arco de Globos:</label>
+                        <select  class="input-quantity"id="arco-globos">
+                            <option value="0" data-cantidad="0">Sin arco</option>
+                            <option value="50" data-cantidad="15">Pequeño 50cm*60cm (x68 globos)</option>
+                            <option value="80" data-cantidad="21">Mediano 80cm*100cm (x96 globos)</option>
+                            <option value="100" data-cantidad="26.5">Grande 100cm*200cm (x128 globos)</option>
                         </select>
                     </div>
                 <?php endif; ?>
@@ -115,24 +112,33 @@ $id = isset($_POST['id']) ? $_POST['id'] : 'ID no especificado';
                 <?php if (!empty($luces)): ?>
                     <div class="luces item-custom">
                         <label for="luces">Selecciona el tipo de luces:</label>
-                        <select class="input-quantity" id="luces" name="luces">
-                            <?php foreach (explode(",", $luces) as $luz): ?>
-                                <option value="<?php echo htmlspecialchars($luz); ?>"><?php echo htmlspecialchars($luz); ?></option>
-                            <?php endforeach; ?>
+                        <select class="input-quantity" id="luces">
+                            <option value="0" data-luces="sin luces">No quiero Alquilar</option>
+                            <option value="5000" data-luces="luces de discoteca">Luces de discoteca</option>
+                            <option value="7000" data-luces="bola disco">Bola disco</option>
+                            <option value="10000" data-luces="luces LED">Luces LED</option>
+                            <option value="8000" data-luces="luces RGB">Luces RGB</option>
+                            <option value="9000" data-luces="luces estroboscópicas">Luces estroboscópicas</option>
+                            <option value="10000" data-luces="luces de fiesta">Luces de fiesta</option>
                         </select>
                     </div>
                 <?php endif; ?>
 
                 <?php if (!empty($columnasGlobos)): ?>
-                    <div class="columnas-globos item-custom">
-                        <label for="columnas-globos">Cantidad de columnas de globos:</label>
-                        <select class="input-quantity" id="columnas-globos" name="columnas-globos">
-                            <?php foreach (explode(",", $columnasGlobos) as $columna): ?>
-                                <option value="<?php echo htmlspecialchars($columna); ?>"><?php echo htmlspecialchars($columna); ?></option>
-                            <?php endforeach; ?>
-                        </select>
-                    </div>
-                <?php endif; ?>
+    <div class="columnas-globos item-custom">
+        <label for="columnas-globos"> Columnas de globos:</label>
+        <select  class="input-quantity" id="columnas-globos" name="columnas-globos">
+            <option value="0">Sin columnas</option>
+            <option value="1">1 columna</option>
+            <option value="2">2 columnas</option>
+            <option value="3">3 columnas</option>
+            <option value="4">4 columnas</option>
+            <option value="5">5 columnas</option>
+            <!-- Agregar más opciones si es necesario -->
+        </select>
+    </div>
+<?php endif; ?>
+
 
                 <?php if (!empty($textoGlobos)): ?>
                     <div class="texto-globos item-custom">
@@ -203,7 +209,7 @@ $id = isset($_POST['id']) ? $_POST['id'] : 'ID no especificado';
                 </span>
                 <br>
                 <span class="titulo-precio-custom">
-                    <label for="precio-luces">Costo por Luces:</label>
+                    <label for="precio-luces"> Alquiler de Luces:</label>
                     <span id="precio-luces">$0</span>
                 </span>
                 <br>
@@ -249,60 +255,109 @@ $id = isset($_POST['id']) ? $_POST['id'] : 'ID no especificado';
 
     </main>
 
+    <script>
+        let precioBase = <?php echo $precio; ?>;
+
+        // Precios de los productos
+        const precioGlobo = 500; // Precio por globo
+
+        // Elemento de luces
+         const lucesSelect = document.getElementById("luces");
+
+        const precioArco = 1000; // Precio por arco de globos
+        const precioLuces = 300; // Precio por luces
+        const precioColumnas = 12000; // Precio por columnas de globos
+        const precioTexto = 500; // Precio por texto en globos
+        const precioFrutas = 300; // Precio por frutas
+        const precioConfites = 200; // Precio por confites
+        const precioPulseras = 150; // Precio por pulseras
+        const precioAnillos = 200; // Precio por anillos
+
+        // Elementos HTML
+        const cantidadGlobosInput = document.getElementById("cantidad-de-globos");
+        const arcoGlobosSelect = document.getElementById("arco-globos"); // El select para arco de globos
+        const frutasInput = document.getElementById("frutas");
+        const lucesInput = document.getElementById("luces");
+        const columnasGlobosInput = document.getElementById("columnas-globos");
+        const textoGlobosInput = document.getElementById("texto-globos");
+        const precioTotalElement = document.getElementById("precio-total");
+        const precioGlobosElement = document.getElementById("precio-globos");
+        const precioArcoElement = document.getElementById("precio-arco-globos");
+        const precioLucesElement = document.getElementById("precio-luces");
+        const precioColumnasElement = document.getElementById("precio-columnas-globos");
+        const precioTextoElement = document.getElementById("precio-texto-globos");
+        const precioFrutasElement = document.getElementById("precio-frutas");
+        const precioConfitesElement = document.getElementById("precio-confites");
+        const precioPulserasElement = document.getElementById("precio-pulseras");
+        const precioAnillosElement = document.getElementById("precio-anillos");
+
+        // Función para actualizar el precio del arco de globos
+        function actualizarPrecioArco() {
+            // Obtener la cantidad de globos para el arco seleccionada
+            const arcoSeleccionado = arcoGlobosSelect.options[arcoGlobosSelect.selectedIndex];
+            const cantidadGlobosArco = parseInt(arcoSeleccionado.getAttribute("data-cantidad")) || 0;
+
+            // Calcular el costo del arco de globos
+            const costoArco = cantidadGlobosArco * precioArco;
+
+            // Mostrar el precio del arco de globos
+            precioArcoElement.textContent = "$" + costoArco;
+
+            return costoArco; // Devolver el costo para sumarlo al precio total
+        }
+
+        // Función para actualizar los precios
+        function actualizarPrecios() {
+            // Obtener cantidad de globos
+            const cantidadGlobos = parseInt(cantidadGlobosInput.value) || 0;
+
+            const lucesSeleccionadas = lucesSelect.options[lucesSelect.selectedIndex];
+            const precioLuces = parseInt(lucesSeleccionadas.value) || 0; // Obtener el valor del precio
+
+            const frutas = parseInt(frutasInput.value) || 0;
+            const luces = parseInt(lucesInput.value) || 0;
+            const columnasGlobos = parseInt(columnasGlobosInput.value) || 0;
+            const textoGlobos = parseInt(textoGlobosInput.value) || 0;
+
+            // Calcular precios individuales
+            const costoGlobos = cantidadGlobos * precioGlobo;
+            const costoArco = actualizarPrecioArco(); // Llamar a la función para obtener el costo del arco
+            const costoLuces = luces * precioLuces;
+            const costoColumnas = columnasGlobos * precioColumnas;
+            const costoTexto = textoGlobos * precioTexto;
+            const costoFrutas = frutas * precioFrutas;
+
+            // Mostrar precios individuales en los elementos correspondientes
+            precioGlobosElement.textContent = "$" + costoGlobos;
+            
+            precioLucesElement.textContent = "$" + precioLuces;
+
+            precioColumnasElement.textContent = "$" + costoColumnas;
+            precioTextoElement.textContent = "$" + costoTexto;
+            precioFrutasElement.textContent = "$" + costoFrutas;
+
+            // Calcular el precio total
+            const precioTotal = precioBase + costoGlobos + costoArco + precioLuces + costoColumnas + costoTexto + costoFrutas;
+
+            // Actualizar el precio total en la página
+            precioTotalElement.textContent = "$" + precioTotal;
+        }
+
+        // Escuchar cambios en el select de arco de globos
+        arcoGlobosSelect.addEventListener("change", actualizarPrecios);
+
+        // Agregar listeners a los inputs para actualizar el precio cuando cambian
+        cantidadGlobosInput.addEventListener("input", actualizarPrecios);
+        lucesSelect.addEventListener("change", actualizarPrecios);
+        frutasInput.addEventListener("input", actualizarPrecios);
+        lucesInput.addEventListener("input", actualizarPrecios);
+        columnasGlobosInput.addEventListener("input", actualizarPrecios);
+        textoGlobosInput.addEventListener("input", actualizarPrecios);
+
+        // Llamar a la función inicialmente para cargar los precios con valores por defecto
+        actualizarPrecios();
+    </script>
+
 </body>
 
 </html>
-
-<script>
-    // Variables base provenientes de PHP
-    let precioBase = <?php echo $precio; ?>;
-
-    // Variables de PHP inyectadas
-    const producto = "<?php echo $producto; ?>";
-    const imagen = "<?php echo $imagen; ?>";
-    const dedicatoriaBase = "<?php echo $dedicatoria; ?>";
-    const globosBase = "<?php echo $globos; ?>";
-    const arcoGlobosBase = "<?php echo $arcoGlobos; ?>";
-    const lucesBase = "<?php echo $luces; ?>";
-    const columnasGlobosBase = "<?php echo $columnasGlobos; ?>";
-    const textoGlobosBase = "<?php echo $textoGlobos; ?>";
-    const botellasBase = "<?php echo $botellas; ?>";
-    const frutasBase = "<?php echo $frutas; ?>";
-    const confitesBase = "<?php echo $confites; ?>";
-    const pulserasBase = "<?php echo $pulseras; ?>";
-    const anillosBase = "<?php echo $anillos; ?>";
-    const idProducto = "<?php echo $id; ?>";
-
-    // Elementos HTML
-    const cantidadGlobos = document.getElementById("cantidad-de-globos");
-    const frutasElement = document.getElementById("frutas");
-    const lucesElement = document.getElementById("luces");
-    const arcoGlobosElement = document.getElementById("arco-globos");
-    const columnasGlobosElement = document.getElementById("columnas-globos");
-    const textoGlobosElement = document.getElementById("texto-globos");
-    const precioTotalElement = document.getElementById("precio-total");
-
-    // Precios fijos por adicionales (pueden ser dinámicos)
-    const precioGlobo = 500;
-    const precioBotella = 800;
-    const precioFruta = 300;
-    const precioConfite = 200;
-
-    // Función para actualizar el precio total
-    function actualizarPrecioTotal() {
-        const cantidadGlobosValue = parseInt(cantidadGlobos.value) || 0;
-        const cantidadFrutasValue = parseInt(frutasElement.value) || 0;
-        const costoGlobos = cantidadGlobosValue * precioGlobo;
-        const costoFrutas = cantidadFrutasValue * precioFruta;
-
-        // Precio total
-        const precioTotal = precioBase + costoGlobos + costoFrutas;
-
-        // Actualizar en la página
-        precioTotalElement.textContent = "$" + precioTotal;
-    }
-
-    // Listeners para cambios
-    cantidadGlobos.addEventListener("input", actualizarPrecioTotal);
-    frutasElement.addEventListener("input", actualizarPrecioTotal);
-</script>
